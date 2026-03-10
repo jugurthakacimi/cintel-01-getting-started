@@ -116,3 +116,13 @@ git push -u origin main
 
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
 - Use `CTRL+f` to find (and replace) text within a file.
+
+## Technical Modification
+I copied the instructor's pipeline file `src/cintel/pipeline_case.py` and made a small modification to the log message to confirm that I can run the project successfully on my machine. The modified line is:
+
+```python
+    26: start_time = time.time()
+    61: elapsed_time = time.time() - start_time
+    62: LOG.info("Total execution time: %.2f seconds", elapsed_time)
+```
+This change will allow me to see the execution time in seconds when I run the pipeline, confirming that the project is set up correctly and running on my machine.

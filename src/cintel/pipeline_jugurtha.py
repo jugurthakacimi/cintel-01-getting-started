@@ -23,7 +23,7 @@ from pathlib import Path
 from datafun_toolkit.logger import get_logger, log_header, log_path
 
 # Capture start time of the script for logging purposes
-START_TIME: float = time.time()
+start_time: float = time.time()
 
 # === CONFIGURE LOGGER ===
 
@@ -58,7 +58,7 @@ def main() -> None:
     LOG.info("END main()")
 
     # Log the total execution time of the script
-    elapsed_time: float = time.time() - START_TIME
+    elapsed_time: float = time.time() - start_time
     LOG.info("Total execution time: %.2f seconds", elapsed_time)
 
 
